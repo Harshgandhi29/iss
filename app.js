@@ -46,7 +46,7 @@ function map (long, lat){
 
 iss();
 
-//setInterval(iss,1000);
+setInterval(iss,1000);
 
 
 
