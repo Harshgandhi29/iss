@@ -9,15 +9,15 @@ const iss_image= L.icon({
 })
 
 function iss() {
-    fetch('http://api.open-notify.org/iss-now.json')
+    fetch('https://api.wheretheiss.at/v1/satellites/25544')//'http://api.open-notify.org/iss-now.json'
         .then(res => {
             console.log('part1')
             return res.json()
             })
         .then(data =>{
     console.log('part2')
-    long = data.iss_position.longitude
-    lat = data.iss_position.latitude
+    long = data.longitude
+    lat = data.latitude
     position.textContent =lat+" and "+ long
    // lat = lat.toFixed(3);
    // long = long.toFixed(3);   
@@ -33,7 +33,7 @@ function map (lat, long){
 
 }
 
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
   /*  id: 'mapbox/streets-v11',
     tileSize: 512,
