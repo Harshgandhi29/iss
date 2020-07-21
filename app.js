@@ -9,7 +9,7 @@ const iss_image= L.icon({
 })
 
 function iss() {
-    fetch('https://api.wheretheiss.at/v1/satellites/25544')//'http://api.open-notify.org/iss-now.json'
+    fetch('https://api.wheretheiss.at/v1/satellites/25544')
         .then(res => {
             console.log('part1')
             return res.json()
