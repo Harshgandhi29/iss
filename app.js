@@ -35,11 +35,7 @@ function map (lat, long){
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-  /*  id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoiaGFyc2gyOSIsImEiOiJja2NwNmhrMzMwM2hiMnpwZ283eDhyajlhIn0.6BTR-982sfogi5fKSfWCmw'
-*/}).addTo(mymap);
+ }).addTo(mymap);
 
 
 
@@ -48,8 +44,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 iss();
-//map(51.505,-.099);
-setInterval(iss,10000);
+setInterval(iss,5000);
 
 
 
