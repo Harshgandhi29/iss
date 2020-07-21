@@ -5,7 +5,7 @@ let position = document.getElementById('Location')
 var mymap = L.map('mapid').setView([5,5], 1);
 var marker=L.marker([1,2]).addTo(mymap);
 const iss_image= L.icon({
-    iconUrl:"iss_2.png",iconSize:[38, 95]
+    iconUrl:"https://iss_2.png",iconSize:[38, 95]
 })
 
 function iss() {
