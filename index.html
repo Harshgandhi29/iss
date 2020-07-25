@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+</head>
+<body>
+    <h1><u>The International Space Station</u></h1>
+    <h2 id='Location'>Canada</h2>
+
+    <div id="mapid"></div>
+    <style>
+    #mapid { 
+        border-style: solid;
+        height:  400px;
+       width: auto;
+       margin: auto;
+       border-radius: 2px;
+       border-color: teal;
+    }
+ 
+    h1 {
+        text-align: center;
+        color: white;
+    }
+       
+    h2 {
+        text-align: center;
+        color: white;
+    }
+     
+    body {
+    /*background-image: url("space.webp");*/
+    background-color: #000000;
+    background-image: linear-gradient(#000000 0%, #414141 74%);
+    }
+    
+
+     </style>
+
+
+    
+<script src="app.js"></script>
+</body>
+</html>
